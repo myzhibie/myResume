@@ -1,7 +1,7 @@
 # myResume
 This is a resume written by angularjs+html5. It is responsive and compatible for PDA ,smart phones and PC.
 This project consist of five parts:`about me`,`my experience`,`my sill`,`my project`and `contact me`.These parts can meet most demand of showing
-yourself to some else(boss,classmates,hr etc),you can make it bocome your own resume by replacing the data files.
+yourself to some else(boss,classmates,hr etc),you can make it become your own resume by replacing the data files.
 
 ##key words
 `angularjs`,`responsive`,`SPA`,`Grunt`,`html5`,`css3`,`yeoman`
