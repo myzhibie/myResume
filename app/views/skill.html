@@ -1,0 +1,12 @@
+<div class="skill-item" ng-repeat=" item in data">
+    <div class="col-md-3 item" ng-repeat="val in item">
+        <div class="skill-outer">
+        <img class="img-responsive grid-item" src="{{val.src}}" alt=""/>
+        <div class="skill-head">
+            <h4>{{val.title}}</h4>
+            <p>{{val.intro}}</p>
+        </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>

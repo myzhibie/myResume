@@ -1,0 +1,10 @@
+<div class="logo">
+    <a href="#"><img src="images/logo-1.png" alt="" /> </a>
+</div>
+<div class="top-nav">
+    <!--responsive button-->
+    <span class="menu" ng-click="toggleList()"></span>
+    <ul class="base-class" ng-class="showCase">
+        <li ng-repeat="item in list" class="{{item[2]}}"><a  ng-click="showClass(item[0])">{{item[1]}}</a></li>
+    </ul>
+</div>

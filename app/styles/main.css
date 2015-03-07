@@ -1,0 +1,977 @@
+body{
+    background: #ffffff;
+    font-family: 'open sans',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{cursor: pointer;}
+.welcome{
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    left:0;
+    top:0.8em;
+}
+.header{
+    background: url(../images/banner.jpg) 0 0;
+    /*宽度固定*/
+    width: 100%;
+    /*高度随内容撑开,这里给一个固定值*/
+    height: 1000px;
+    display: block;
+    padding: 10em 0;
+    /*背景图像的尺寸，可用像素也可用cover，contain等*/
+    background-size: cover;
+}
+
+.logo4header{
+    float: left;
+    width: 50%;
+}
+
+.logo4header p{
+    padding: 0.5em 0;
+    margin: 0;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 300;
+}
+.head-grid{
+    float:left;
+    width:34.9% ;
+    padding: 0 3px;
+}
+
+.grid-ex,.me{
+    float: left;
+    width: 16.666%;
+    text-align: center;
+    background: #1EDBB5;
+    height: 190px;
+}
+.me{
+    width:48%;
+}
+
+.grid-me,.grid-pro{
+    padding: 2.5em 0;
+}
+.grid-pro{
+    background: #1BBC9B;
+}
+
+img.clock,img.clock-item{
+    margin: 0 auto;
+}
+
+
+.grid-ex:hover,.me:hover,.grid-msg:hover{
+    background: #1BBC9B;
+}
+.grid-pro:hover{
+    background: #1EDBB5;
+}
+.grid-ex h6,.me h6,.grid-msg h6{
+    color:#fff;
+    font-size:2em;
+    padding: 0;
+    margin: 0;
+}
+/*
+使用百分比和em来布局
+*/
+.grid-header-contact{
+    padding: 0 0 0 13.5em;
+}
+
+.grid-msg{
+    float: left;
+    width: 19.9%;
+    text-align: center;
+    background: #1EDBB5;
+    height: 189px;
+}
+
+.msg-head{
+    float: right;
+}
+.up{
+    text-align: center;
+    padding: 9em 0;
+}
+.header-home{
+    background: #1BBC9B;
+    z-index:999;
+    padding:  0;
+}
+.logo{
+    float: left;
+    line-height: 100%;
+    height: 100%;
+}
+.logo img{
+    margin: 0.25em 0;
+}
+.top-nav{
+    float: right;
+}
+
+.top-nav ul{
+
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav ul li{
+    display: inline-block;
+    padding: 0.8em;
+}
+.top-nav ul li a{
+    color: #fff;
+    font-size: 1.6em;
+    text-decoration: none;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    padding: 0;
+
+}
+.content{
+    padding-top: 3em;
+}
+.active{
+    font-weight:bold;
+}
+.top-nav ul li.active a{
+    font-weight: 700;
+}
+.top-nav span.menu{
+    display: none;
+}
+
+.top-nav span.menu:before{
+    content: url("../images/menu.png");
+    cursor: pointer;
+    width: 100%;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+}
+.img-customeheight{
+    height: 100%;
+}
+.wrap{
+    opacity: 0;
+    /*padding: 10px 10px;*/
+    /*border-radius: 20px;*/
+    position: relative;
+
+    /*box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
+    /*-webkit-box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
+    /*-moz-box-shadow: 0px 3px 10px rgba(0,0,0,0.5);*/
+    /*-o-box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
+}
+
+
+a.more{
+    color: #1BBC9B;
+    font-size: 1.6em;
+    border: 2px solid #1BBC9B;
+    border-radius:50px ;
+    text-decoration: none;
+    transition:0.5s all;
+    padding: 2px 10px;
+}
+a.more:hover{
+    background: #1BBC9B;
+    color: #fff;
+    border: 2px solid #1BBC9B;
+}
+/*style for about me*/
+.about{
+    padding: 4em 0;
+}
+.about h3{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #1ABB9A;
+    border-bottom: 1px solid #BBBBBB;
+    width: 35%;
+    margin: 0 auto;
+    padding: 0 0 0 0.8em;
+}
+.about h3 span{
+    border-bottom: 5px solid #1ABB9A;
+    padding: 27px 0;
+}
+.about-grid{
+    padding: 3em 0;
+}
+.about-left p{
+    font-size: 1.5em;
+    color: #414141;
+    margin: 0;
+    text-align: left;
+    font-weight: 300;
+}
+.about-left p span{
+    display: block;
+    margin: 0 auto;
+    padding: 0 20%;
+}
+.about-left img{
+    margin: 0 auto;
+}
+.about-right h5{
+    font-size: 1.8em;
+    color: #000;
+    margin-bottom: 5px;
+    border-bottom:1px solid #1ABB9A ;
+    padding-bottom: 5px;
+}
+
+.about-right{
+    padding-left: 2em;
+}
+.about-right span{
+    display: block;
+    font-size: 1.5em;
+    color: #414141;
+    margin: 0;
+}
+/*style for project*/
+.project{
+    background: url(../images/b.jpg) center 0 repeat-y ;
+    width: 100%;
+    min-height: 800px;
+    display: block;
+    background-size: cover;
+    padding: 5em 0 2em;
+}
+.project-head h3{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #BBBBBB;
+    width: 35%;
+    margin: 0 auto;
+    padding: 0 0 0.8em;
+}
+.project-head h3 span{
+   border-bottom: 5px solid #fff;
+   padding: 27px 0;
+}
+/*style for experience*/
+.experience{
+    background: url('../images/bb.jpg') 0 0;
+    width: 100%;
+    min-height: 700px;
+    display: block ;
+    background-size: cover;
+    padding: 5em 0 3em;
+}
+.experience h3{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #BBBBBB;
+    width: 35%;
+    margin: 0 auto;
+    padding: 0 0 0.8em;
+}
+.experience h3 span{
+    border-bottom: 5px solid #ffffff;
+    padding: 26px 0;
+}
+.showSlider{
+    width: 1200px;
+    position: relative;
+    padding: 1em 0;
+    margin: 3em auto;
+    height: 422px;
+    overflow: hidden;
+}
+.showLeft,.showRight{
+  background: url('../images/arrow.png');
+  width: 44px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+    top:50%;
+}
+.showLeft{
+    background-position: 0 0;
+    left:50px;
+}
+.showRight{
+    background-position: -54px 0;
+    right:50px;
+}
+.sliderList{
+    width:6000px;
+    height: 404px;
+    position: absolute;
+    left: -1200px;
+    z-index:1;
+}
+.list-item{
+    display: inline-block;
+  position: relative;
+    width: 1200px;
+    height: 404px;
+    text-align: center;
+
+}
+.list-item img{
+    border: 2px solid #ffffff;
+    border-collapse: separate;
+
+}
+.item-span{
+    position: absolute;
+    display: inline-block;
+    width: 900px;
+    height: 100px;
+    bottom: -100px;
+    left: 150px;
+    text-align: center;
+
+    /*line-height: 50px;*/
+    color: #fff;
+    font-size: 22px;
+    word-break: break-all;
+    white-space:normal;
+    padding: 20px 10px;
+    opacity: 0;
+    transition:all linear 1s;
+    -webkit-transition:all linear 1s;
+}
+.item-span.showitem{
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    opacity: 1;
+}
+.itemimg{
+    margin: 0 auto;
+    transition:opacity linear 1s;
+    -webkit-transition:opacity  linear 1s;
+    opacity: 0;
+}
+.itemimg.show{
+    opacity: 1;
+}
+.sliderUl{
+     margin: 0 auto;
+     padding: 0;
+    display: none;
+ }
+.sliderUl li{
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    width: 70%;
+}
+.sliderUl li img{
+    display: block;
+   border: 2px solid #ffffff;
+   border-collapse: collapse;
+}
+.sliderUl li span{
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    background: rgba(0,0,0,.3);
+    padding: 20px 5px;
+}
+.buttons{
+
+    height: 16px;
+    width: 100px;
+    margin: 10px auto;
+}
+.buttons span{
+    cursor: pointer;
+    float: left;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 5px;
+}
+.buttons .on{
+    background: #1BBC9B;
+}
+.bottom-none{
+     border-bottom: none !important;
+ }
+
+/*style for skill start*/
+.skill{
+    text-align: center;
+    padding: 5em 0;
+
+}
+.skill-top h3{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #1BBC9B;
+    border-bottom: 1px solid #BBBBBB;
+    width: 35%;
+    margin: 0 auto;
+    padding: 0 0 0 .8em;
+}
+.skill-top h3 span{
+    border-bottom: 5px solid #1BBC9B;
+    padding: 27px 0;
+}
+.skill-top p{
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    padding: 2em 0;
+
+}
+.skill-example{
+    padding: 0 0 2em;
+}
+.skill-item{
+    padding: 1em 0;
+}
+.item{
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+
+    /*border: 1px solid #ccc;*/
+}
+.item:hover .skill-head{
+    display: block;
+}
+.skill-outer{
+    border: 1px solid #ccc;
+    width: 252px;
+    overflow: hidden;
+}
+.skill-head{
+    background: #1BBC9B;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    height: 91px;
+    /*position: absolute;*/
+    /*bottom:0;*/
+    /*left:17px;*/
+    /*padding: 0px;*/
+    /*display: none;*/
+
+}
+.skill-head h4{
+    font-size: 1.6em;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+.skill-head p{
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+    padding: 7px 0 0;
+}
+.grid-item{
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 auto;
+}
+
+
+/*style for skill end*/
+/*style for footer start*/
+.footer{
+    background: #1ABB9A;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer-class{
+    color: #fff;
+    font-size: 2em;
+}
+.toTop {
+    width: 48px;
+    height: 48px;
+    display: block;
+    text-decoration: none;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    overflow: hidden;
+    border: none;
+    text-indent: 100%;
+    background: url('../images/arr.png') no-repeat 0px 0px;
+    z-index: 999;
+}
+.animate_top{
+    opacity: 1;
+
+}
+.animate_top.ng-hide-add.ng-hide-add-active,
+.animate_top.ng-hide-remove.ng-hide-remove-active{
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+.animate_top.ng-hide{
+    opacity: 0;
+}
+/*style for footer end*/
+
+/*responsive for the whole page start*/
+@media(max-width: 1440px){
+
+}
+@media(max-width: 1366px){
+    .grid-msg{
+        height: 189px;
+    }
+}
+@media(max-width: 1280px){
+    .showSlider{
+        display: none;
+    }
+    .sliderUl{
+        display: block;
+    }
+    .buttons{
+        display: none;
+    }
+    .skill-head{
+
+    }
+}
+@media(max-width: 1024px){
+    .grid-ex,.me{
+        height: 155px ;
+    }
+
+    .grid-header-contact{
+        padding: 0 0 0 11.2em;
+    }
+    .grid-ex h6, .me h6,.grid-msg h6{
+        font-size: 1.7em;
+    }
+
+    .header{
+        height: 900px;
+    }
+    .logo4header p{
+        font-size: 1.7em;
+    }
+    .project-head h3{
+        width: 41%;
+    }
+
+
+
+}
+@media(max-width: 768px){
+    .top-nav ul li{
+        display: block;
+        float:none;
+        margin: 1.5em 0.7em;
+        padding: 0 0;
+        text-align: center;
+
+    }
+
+    .top-nav ul li a{
+        color: #fff;
+        border: none;
+        padding: 0;
+    }
+    .top-nav ul{
+
+        background:rgba(27, 188, 155, 0.9);
+        position:absolute;
+        width:100%;
+        z-index: 999;
+        left: 0%;
+        margin: 0em 0em;
+
+    }
+    .show{
+        display: none;
+    }
+    .animate-show-list {
+        opacity: 1;
+    }
+    .base-class{
+        -webkit-transition: all linear 0.5s;
+        transition: all linear 0.5s;
+    }
+    .base-class.showList{
+        opacity: 1;
+        height: 333px;
+
+    }
+    .base-class.hideList{
+        opacity: 0;
+        height: 0;
+
+    }
+    .top-nav span.menu{
+        display: block;
+        width: 100%;
+        position: relative;
+        padding: 1.1em 1em 0.5em;
+        text-align: right;
+
+    }
+
+    .top-nav ul li span{
+        display: none;
+    }
+    .grid-me,.grid-pro{
+        padding: 0.5em 0;
+    }
+    .grid-ex,.me{
+        height: 118px;
+    }
+    .grid-ex h6,.me h6,.grid-msg h6{
+        font-size: 1.4em;
+    }
+    .grid-msg{
+        height: 120px;
+    }
+    .grid-header-contact{
+        padding: 0 0 0 8.5em;
+    }
+    .header{
+        height: 765px;
+        padding: 7em 0;
+    }
+    .project-head h3{
+        width: 50%;
+    }
+    .experience h3{
+        width: 44%;
+    }
+    .sliderUl li{
+        margin: 0 auto;
+        list-style: none;
+        position: relative;
+        width: 80%;
+    }
+    .skill-item{
+        padding: 0;
+    }
+    .item{
+        padding: 5px 0;
+    }
+    .grid-item{
+        margin: 0 auto;
+    }
+    .skill-head{
+
+        left:20px;
+    }
+
+
+}
+
+@media(max-width: 640px){
+    .logo4header p{
+        font-size: 1.4em;
+    }
+    .grid-ex h6,.me h6, .grid-msg h6{
+        font-size: 1.3em;
+    }
+    .grid-ex,.me{
+        height: 96px;
+    }
+    img.clock{
+        width: 66%;
+    }
+    .grid-msg{
+        height: 99px;
+    }
+    .grid-header-contact{
+        padding: 0 0 0 7em;
+    }
+    .header{
+        height: 602px;
+        padding: 5em 0;
+    }
+    .up{
+        padding: 6em 0;
+    }
+    .about{
+        padding: 2em 0;
+    }
+    .about h3{
+        width: 44%;
+    }
+    .about-left p{
+      font-size: 1.3em;
+    }
+    .about-right h5{
+        font-size: 1.5em;
+        color: #000;
+        margin: 0;
+    }
+    .about-right{
+        padding-left: 1.5em;
+    }
+    .about-right span{
+        display: block;
+        font-size: 1em;
+        color: #000;
+        margin: 0;
+    }
+    .project-head h3{
+        width: 64%;
+    }
+    .project{
+        padding: 3em 0;
+    }
+    .experience{
+        padding: 3em 0 4em;
+    }
+    .experience h3{
+        width: 68%;
+    }
+    .sliderUl li span{
+
+        color: #fff;
+        font-size: 1em;
+        padding: 10px 2px;
+    }
+    .sliderUl li{
+        margin: 0 auto;
+        list-style: none;
+        position: relative;
+        width: 80%;
+    }
+    .skill{
+        padding: 4em 0;
+    }
+    .skill-top p{
+        font-size: 1.3em;
+
+    }
+    .skill-top h3{
+        width: 54%;
+    }
+
+
+}
+@media(max-width: 480px){
+    .logo4header p{
+        font-size: 1em;
+    }
+    .grid-ex, .me{
+        height: 72px;
+    }
+    .grid-msg{
+        height: 72px;
+    }
+    .grid-header-contact{
+        padding: 0 0 0 5.1em;
+    }
+    .up{
+        padding: 5em 0;
+    }
+    .header{
+        height: 485px;
+    }
+    .grid-ex h6, .me h6, .grid-msg h6{
+        font-size: 0.9em;
+    }
+    .about{
+        padding: 2em 0;
+    }
+    .about h3{
+        font-size: 2.5em;
+        width: 58%;
+    }
+    .about h3 span{
+        padding: 22px 0;
+    }
+    .about-left p{
+        font-size: 1.2em;
+        height: 51px;
+        overflow: hidden;
+
+    }
+    .about-right h5{
+        font-size: 1.5em;
+        color: #000;
+        margin: 0;
+    }
+    .about-right{
+        padding-left: 1.2em;
+    }
+    .about-right span{
+        display: block;
+        font-size: 1em;
+        color: #414141;
+        margin: 0;
+    }
+    .project-head h3{
+        width: 85%;
+        font-size: 2.5em;
+
+    }
+    .project-head h3 span{
+        padding: 22px 0;
+    }
+    .experience{
+        padding: 2em 0 3em;
+    }
+    .experience h3{
+        font-size: 2.5em;
+    }
+    .experience h3 span{
+        padding: 22px 0;
+    }
+    .sliderUl li span{
+        font-size: 1em;
+        padding: 2px 2px;
+    }
+    .sliderUl li{
+        margin: 0 auto;
+        list-style: none;
+        position: relative;
+        width: 90%;
+    }
+    .skill-top h3{
+        font-size: 2.1em;
+    }
+    .skill-top h3 span{
+        padding: 22px 0;
+    }
+    .skill-top p{
+        font-size: 1.2em;
+        overflow: hidden;
+        height: 87px;
+    }
+    .skill-head{
+        width: 100%;
+        left:0;
+    }
+
+
+
+}
+@media(max-width: 320px){
+    .logo4header p{
+        font-size: 1em;
+        overflow: hidden;
+        height: 20px;
+        padding: 0;
+    }
+    .grid-msg{
+        height: 46px;
+        white-space: nowrap;
+        word-break: break-all;
+        overflow: hidden;
+    }
+    .grid-ex,.me{
+        height: 44px;
+        white-space: nowrap;
+        word-break: break-all;
+        overflow: hidden;
+    }
+    .grid-header-contact{
+        padding: 0 0 0 3.2em;
+    }
+    .up{
+        padding: 2em 0;
+        display: none;
+    }
+    .welcome{
+        display: none;
+    }
+    .header{
+        height: 273px;
+        padding: 3em 0 2em;
+    }
+    .header-home{
+        padding: 0 0;
+    }
+    .top-nav ul li a{
+        font-size: 1.3em;
+    }
+    .top-nav ul li{
+        margin: 1em 0.7em;
+    }
+    .grid-ex h6, .me h6 .grid-msg h6{
+        font-size: 0.6em;
+    }
+    .up-grid{
+        width: 20%;
+    }
+    .about,.about-grid{
+        padding: 1em 0;
+    }
+    .about{
+        padding: 1em 0;
+    }
+    .about h3 span,.project-head h3 span,.experience h3 span,.skill-top h3 span{
+        padding: 14px 0;
+    }
+    .about h3,.project-head h3,.experience h3,.skill-top h3{
+        font-size: 1.7em;
+    }
+    .about-left p{
+       font-size: 1.1em;
+       height: 45px;
+    }
+    a.more {
+        font-size: 1.3em;
+        padding: 2px 10px;
+    }
+    .project{
+
+        padding: 1em 0;
+    }
+    .experience{
+        padding: 1em 0;
+    }
+    .skill{
+        padding: 1em 0 2em;
+    }
+    .skill-top h3{
+        width: 69%;;
+    }
+    .skill-top p{
+        font-size: 1.1em;
+        padding: 1em 0 2em;
+        height: 61px;
+    }
+
+
+}
+
+
+
+/*responsive for the whole page end*/
