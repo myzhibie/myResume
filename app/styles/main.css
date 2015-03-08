@@ -469,7 +469,14 @@ a.more:hover{
 .skill-outer{
     border: 1px solid #ccc;
     width: 252px;
+    height: 340px;
     overflow: hidden;
+    position: relative;
+}
+.skill-outer img{
+    position: absolute;
+    top:0;
+    left:0;
 }
 .skill-head{
     background: #1BBC9B;
@@ -477,9 +484,9 @@ a.more:hover{
     width: 250px;
     margin: 0 auto;
     height: 91px;
-    /*position: absolute;*/
-    /*bottom:0;*/
-    /*left:17px;*/
+    position: absolute;
+    bottom:0;
+    left:0px;
     /*padding: 0px;*/
     /*display: none;*/
 
@@ -497,8 +504,6 @@ a.more:hover{
     padding: 7px 0 0;
 }
 .grid-item{
-    max-width: 250px;
-    max-height: 250px;
     margin: 0 auto;
 }
 
@@ -689,10 +694,6 @@ a.more:hover{
     }
     .grid-item{
         margin: 0 auto;
-    }
-    .skill-head{
-
-        left:20px;
     }
 
 
