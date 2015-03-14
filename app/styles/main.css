@@ -173,7 +173,6 @@ img.clock,img.clock-item{
     /*padding: 10px 10px;*/
     /*border-radius: 20px;*/
     position: relative;
-
     /*box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
     /*-webkit-box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
     /*-moz-box-shadow: 0px 3px 10px rgba(0,0,0,0.5);*/
@@ -472,6 +471,7 @@ a.more:hover{
     height: 340px;
     overflow: hidden;
     position: relative;
+    margin:0 auto;
 }
 .skill-outer img{
     position: absolute;
@@ -507,8 +507,54 @@ a.more:hover{
     margin: 0 auto;
 }
 
-
 /*style for skill end*/
+/*style for contact start*/
+.contact{
+    background: url(../images/form-bg.jpg) 0 0;
+    width: 100%;
+    min-height: 600px;
+    display: block;
+    background-size: cover;
+    padding: 5em 0 2em;
+
+}
+.contact-head h3{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #BBBBBB;
+    width: 35%;
+    margin: 0 auto;
+    padding: 0 0 0.8em;
+}
+.contact-head h3 span{
+    border-bottom: 5px solid #fff;
+    padding: 27px 0;
+}
+.contact-bottom{
+    padding: 8em 0;
+}
+
+.contact-left img{
+    border-radius: 500px;
+    border: 3px solid #1ABB9A;
+}
+.contact-left h6{
+    font-size: 3em;
+    color: #1ABB9A;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+.contact-one{
+    margin:0 auto;
+    background: #fff;
+    position: relative;
+}
+
+
+/*style for contact end*/
 /*style for footer start*/
 .footer{
     background: #1ABB9A;
@@ -594,6 +640,10 @@ a.more:hover{
     .project-head h3{
         width: 41%;
     }
+    .contact-head h3{
+        width: 41%;
+    }
+
 
 
 
@@ -695,6 +745,10 @@ a.more:hover{
     .grid-item{
         margin: 0 auto;
     }
+    .contact-head h3{
+        width: 50%;
+    }
+
 
 
 }
@@ -782,6 +836,16 @@ a.more:hover{
     .skill-top h3{
         width: 54%;
     }
+    .contact{
+        padding: 3em 0;
+    }
+    .contact-head h3{
+        width: 64%;
+    }
+    .contact-bottom{
+        padding: 1em 0;
+    }
+
 
 
 }
@@ -880,6 +944,14 @@ a.more:hover{
         left:0;
     }
 
+    .contact-head h3{
+        width: 85%;
+        font-size: 2.5em;
+    }
+    .contact-head h3 span{
+        padding: 22px 0;
+    }
+
 
 
 }
@@ -937,10 +1009,10 @@ a.more:hover{
     .about{
         padding: 1em 0;
     }
-    .about h3 span,.project-head h3 span,.experience h3 span,.skill-top h3 span{
+    .about h3 span,.project-head h3 span,.experience h3 span,.skill-top h3 span,.contact-head h3 span{
         padding: 14px 0;
     }
-    .about h3,.project-head h3,.experience h3,.skill-top h3{
+    .about h3,.project-head h3,.experience h3,.skill-top h3,.contact-head h3{
         font-size: 1.7em;
     }
     .about-left p{
@@ -968,6 +1040,12 @@ a.more:hover{
         font-size: 1.1em;
         padding: 1em 0 2em;
         height: 61px;
+    }
+    .contact{
+        padding: 1em 0;
+    }
+    .contact-left h6{
+        font-size: 1.5em;
     }
 
 

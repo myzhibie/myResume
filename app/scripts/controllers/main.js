@@ -42,6 +42,11 @@ angular.module('myproApp')
             'query':{method:'GET',isArray:false}
         });
     }])
+    .factory('getContactInfo',['$resource',function($resource){
+        return $resource('../../data/contact.json',{},{
+            'query':{method:'GET',isArray:true}
+        });
+    }])
     .factory('getTop',function(){
         return function(obj){
             var disY=obj.offsetTop;
