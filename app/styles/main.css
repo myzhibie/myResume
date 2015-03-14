@@ -3,6 +3,7 @@ body{
     font-family: 'open sans',sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 a{cursor: pointer;}
 .welcome{
@@ -162,7 +163,7 @@ img.clock,img.clock-item{
     position: fixed;
     top: 0;
     width: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     left: 0;
     text-align:center ;
 }
@@ -952,7 +953,9 @@ a.more:hover{
     .contact-head h3 span{
         padding: 22px 0;
     }
-
+    .fixed{
+    text-align: left;
+    }
 
 
 }
