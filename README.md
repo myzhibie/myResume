@@ -14,17 +14,19 @@ you can run it like this below in node js bash:<br>
 grunt serve
 ```
 then the explorer will run the page automaticly.<br>
-2.If you do not have a `Grunt` enviroment yet,you can put the app directory into your web server such as [WAMP](http://www.wampserver.com/) and then 
+2.If you do not have a `Grunt` enviroment yet,you can put the dist directory into your web server such as [WAMP](http://www.wampserver.com/) and then 
 check it in the explorer by hand.
 
 ##How to make it be my own resume
 It is easy to do it ,you see, the strcture of the project is below:<br>
+
 >app
 >>data
 >>>aboutme.json<br>
 >>>experience.json<br>
 >>>skill.json<br>
 >>>timeline.json<br>
+>>>contact.json<br>
 >>>...<br>
 >>
 >>images<br>
@@ -32,6 +34,7 @@ It is easy to do it ,you see, the strcture of the project is below:<br>
 >>styles<br>
 >>views<br>
 >
+>dist<br>
 >test<br>
 >...(some files buildt by grunt or yeoman automatically)
 
