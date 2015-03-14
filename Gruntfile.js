@@ -328,6 +328,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      otherpng:{
+          expand:true,
+          cwd: '<%= yeoman.app %>/images',
+          dest: '<%= yeoman.dist %>/images',
+          src:['spine.png','timeline.png']
       }
     },
 
@@ -398,7 +404,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'copy:otherpng'
   ]);
 
   grunt.registerTask('default', [

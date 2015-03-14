@@ -1,15 +1,5 @@
 <div class="ti_header"></div>
 <div class="tl_container">
-    <!--<div class="scrubber" id="scrubber" strick-scr>-->
-        <!--<a href='javascript:;' onclick='scrollToEnd();'>现在</a>-->
-
-        <!--<div ng-repeat="(key,val) in list">-->
-            <!--<a href="javascript:;" class="scrubber_year {{getYearHigh(getYear(key))}}">{{getYear(key)}}</a>-->
-            <!--<a href="javascript:;" class="scrubber_month {{yearMonthHigh[getYear(key)][getMonth(key1)]}}"-->
-               <!--ng-repeat="(key1,val1) in val">{{getMonth(key1)}}月</a>-->
-        <!--</div>-->
-        <!--<a href='javascript:;' onclick='scrollToStart();'>开始</a>-->
-    <!--</div>-->
     <div class="tl_content" id="tl_content" >
         <div ng-repeat="(key,val) in list" >
             <div class="tl_content_year" id="content_year_{{getYear(key)}}">

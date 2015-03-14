@@ -5,7 +5,7 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
-a{cursor: pointer;}
+a{cursor:pointer;}
 .welcome{
     font-size: 3em;
     font-weight: bold;
