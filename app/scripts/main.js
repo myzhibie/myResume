@@ -21,29 +21,29 @@ angular.module('myproApp')
         }
     }])
     .factory('getAboutMeInfo',['$resource',function($resource){
-       return $resource('../../data/aboutme.json',{},{
+       return $resource('./data/aboutme.json',{},{
            'query':  {method:'GET', isArray:false}
        });
     }])
     .factory('getTimeLineInfo',['$resource',function($resource){
-        return $resource('../../data/timeline.json',{},{
+        return $resource('./data/timeline.json',{},{
             'query':{method:'GET',isArray:false}
         });
 
     }])
     .factory('getExpInfo',['$resource',function($resource){
-        return $resource('../../data/experience.json',{},{
+        return $resource('./data/experience.json',{},{
             'query':{method:'GET',isArray:true}
         });
 
     }])
     .factory('getSkillInfo',['$resource',function($resource){
-        return $resource('../../data/skill.json',{},{
+        return $resource('./data/skill.json',{},{
             'query':{method:'GET',isArray:false}
         });
     }])
     .factory('getContactInfo',['$resource',function($resource){
-        return $resource('../../data/contact.json',{},{
+        return $resource('./data/contact.json',{},{
             'query':{method:'GET',isArray:true}
         });
     }])

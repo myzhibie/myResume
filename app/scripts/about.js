@@ -23,6 +23,6 @@ angular.module('myproApp')
     .directive('aboutMe',function(){
         return {
             restrict:'E',
-            templateUrl:'../../views/about.html'
+            templateUrl:'./views/about.html'
         }
     })

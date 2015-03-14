@@ -6,7 +6,7 @@ angular.module('myproApp')
     .directive('mySkill',function(){
         return {
             restrict:'E',
-            templateUrl:'../../views/skill.html'
+            templateUrl:'./views/skill.html'
         }
     })
     .directive('myZoom',function(){

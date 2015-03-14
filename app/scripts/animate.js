@@ -1,5 +1,6 @@
 
 
+{
     function myAnimate (obj,attrObj,dur,fn,callback) {
         var tween;
         var callfun;
@@ -181,7 +182,7 @@
 
 
 //动画算法
-    Tween = {
+   var  Tween = {
         Linear: function(t,b,c,d){ return c*t/d + b; },
         Quad: {
             easeIn: function(t,b,c,d){
@@ -326,4 +327,4 @@
         }
     }
 
-
+  }

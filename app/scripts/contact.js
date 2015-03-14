@@ -7,7 +7,7 @@ angular.module('myproApp')
     .directive('myContact',function(){
         return {
             restrict:'E',
-            templateUrl:'../../views/contact.html'
+            templateUrl:'./views/contact.html'
         }
     })
     .directive('myShake',function(){

@@ -29,7 +29,7 @@ angular.module('myproApp')
     .directive('myExp', function () {
         return {
             restrict: 'E',
-            templateUrl: '../../views/exp.html'
+            templateUrl: 'views/exp.html'
         }
     })
     .directive('mySlider', function () {

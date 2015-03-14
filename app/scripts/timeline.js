@@ -28,7 +28,7 @@ angular.module('myproApp')
     .directive('myProject',['$window', function ($window) {
         return {
             restrict: 'E',
-            templateUrl: '../../views/timeline.html'
+            templateUrl: './views/timeline.html'
         }
     }])
     .directive('setPos',['getTop','$window',function(getTop,$window){

@@ -8,7 +8,7 @@ angular.module('myproApp')
     .directive('myHome',function(){
         return {
             restrict:'E',
-            templateUrl:'../../views/home.html'
+            templateUrl:'./views/home.html'
         }
     })
     .directive('myRedirect',['$rootScope','redirect',function($rootScope,redirect){

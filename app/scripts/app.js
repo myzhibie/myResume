@@ -20,15 +20,15 @@ angular
   .config(['$resourceProvider','$routeProvider',function ($resourceProvider,$routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: './views/main.html',
         controller: 'MainCtrl'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
+        templateUrl: './views/about.html',
         controller: 'AboutCtrl'
       })
       .when('/test',{
-          templateUrl:'views/test.html',
+          templateUrl:'./views/test.html',
           controller:'TestCtrl'
         })
       .otherwise({
