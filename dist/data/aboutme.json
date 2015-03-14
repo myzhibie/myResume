@@ -1,0 +1,12 @@
+{
+    "base":["姓名：慕阳","学历：硕士在读","籍贯：甘肃省庆阳市"],
+    "introduction":["2006-2010，华中科技大学管理学院，信息管理与信息系统专业",
+        "2010年7月-2013年4月，甘肃省酒泉钢铁集团信息中心应用开发科，工程师",
+        "2013年9月-至今，华中科技大学软件学院软件工程专业硕士在读"
+    ],
+    "research":[
+        "web前端开发工程师",
+        " 前端开发技术：(x)html(5),css(3),javascript,Ajax,jQuery,bootstrap,angularjs，phonegap,前端自动化等",
+        "服务端开发技术：php,Linux,git,Asp.net(c#),winForm,mysql,sqlserver,oracle等"
+    ]
+}

@@ -1,0 +1,88 @@
+{
+  "1":[{
+        "src":"images/js.png",
+        "title":"Javascript",
+        "intro":"熟悉原生的javascript，能够使用原生javascript编写常见的网页交互效果"
+    },
+    {
+        "src":"images/CSS3.jpg",
+        "title":"CSS(3)",
+        "intro":"熟悉CSS的使用场景，CSS3的新特性，能够利用CSS完成常见效果和布局"
+    },
+    {
+        "src":"images/html.png",
+        "title":"HTML(5)",
+        "intro":"熟悉HTML标签，能够利用HTML完成常见网页布局，并且熟悉HTML5中的新特性及其用法"
+    },
+    {
+        "src":"images/JQ.png",
+        "title":"jQuery",
+        "intro":"熟悉jQuery的使用和其原理，能够快速使用jQuery来简化web开发流程"
+    }],
+    "2":[
+        {
+            "src":"images/boot.png",
+            "title":"Bootstrap",
+            "intro":"熟悉Bootstrap这类CSS框架，能够使用其快速开发一些web应用"
+        },
+        {
+            "src":"images/angular.png",
+            "title":"AngularJS",
+            "intro":"能够熟练使用angularjs进行web开发，了解其原理及运行机制"
+        },
+        {
+            "src":"images/pg.png",
+            "title":"Phonegap",
+            "intro":"能够使用phonegap+html5(ionic,jqmobi)技术独立完成移动app的开发(前后端)"
+        },
+        {
+            "src":"images/grunt.png",
+            "title":"grunt",
+            "intro":"能够使用grunt作为web开发的构建工具，并编写一些常见的任务来提高开发的效率"
+        }
+
+    ],
+    "3":[
+        {
+            "src":"images/require.png",
+            "title":"requireJS",
+            "intro":"常使用requirejs作为前端模块化解决方案，并对前端模块化规范如AMD,commonjs都有所了解"
+
+        },
+        {
+            "src":"images/php.png",
+            "title":"PHP",
+            "intro":"能够熟练使用PHP及其框架(thinkPHP,YII等)快速构建web应用或开发移动端数据接口"
+
+        },
+        {
+            "src":"images/git.png",
+            "title":"Git",
+            "intro":"可以使用git作为团队开发代码管理工具，其他的如SVN，TFS等都使用过"
+
+        },
+        {
+            "src":"images/Linux.jpg",
+            "title":"Linux",
+            "intro":"了解Linux(centOS,ubantuServer)操作系统及其原理，能够独立搭建LAMP运行环境并负责日常维护"
+        }
+
+    ],
+    "4":[
+        {
+            "src":"images/db.png",
+            "title":"数据库",
+            "intro":"使用过MySQL,sqlserver,oracle等主流关系型数据库，能够满足平时后端开发对数据库操作的要求"
+
+        },
+        {
+            "src":"images/net.png",
+            "title":".Net",
+            "intro":"熟悉.net平台上asp.net webform及winForm技术，并有相关工作经验"
+
+        }
+
+    ]
+
+
+}
