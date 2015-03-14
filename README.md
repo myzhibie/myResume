@@ -19,12 +19,14 @@ check it in the explorer by hand.
 
 ##How to make it be my own resume
 It is easy to do it ,you see, the strcture of the project is below:<br>
+
 >app
 >>data
 >>>aboutme.json<br>
 >>>experience.json<br>
 >>>skill.json<br>
 >>>timeline.json<br>
+>>>contact.json<br>
 >>>...<br>
 >>
 >>images<br>
@@ -32,6 +34,7 @@ It is easy to do it ,you see, the strcture of the project is below:<br>
 >>styles<br>
 >>views<br>
 >
+>dist<br>
 >test<br>
 >dist<br>
 >...(some files buildt by grunt or yeoman automatically)
