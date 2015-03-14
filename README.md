@@ -14,7 +14,7 @@ you can run it like this below in node js bash:<br>
 grunt serve
 ```
 then the explorer will run the page automaticly.<br>
-2.If you do not have a `Grunt` enviroment yet,you can put the dist directory into your web server such as [WAMP](http://www.wampserver.com/) and then 
+2.If you do not have a `Grunt` enviroment yet,you can put the `dist` directory into your web server such as [WAMP](http://www.wampserver.com/) and then 
 check it in the explorer by hand.
 
 ##How to make it be my own resume
