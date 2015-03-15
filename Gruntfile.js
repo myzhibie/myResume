@@ -333,7 +333,7 @@ module.exports = function (grunt) {
           expand:true,
           cwd: '<%= yeoman.app %>/images',
           dest: '<%= yeoman.dist %>/images',
-          src:['spine.png','timeline.png']
+          src:['spine.png','timeline.png','favicon.ico']
       }
     },
 

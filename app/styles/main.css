@@ -1,9 +1,21 @@
+
+
+html{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin:0;
+    padding: 0;
+}
 body{
     background: #ffffff;
     font-family: 'open sans',sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width:100%;
+    height: 100%;
 }
 a{cursor:pointer;}
 .welcome{
@@ -143,6 +155,7 @@ img.clock,img.clock-item{
 }
 .content{
     padding-top: 3em;
+    overflow-x: hidden;
 }
 .active{
     font-weight:bold;
@@ -580,7 +593,7 @@ a.more:hover{
     right: 10px;
     overflow: hidden;
     border: none;
-    text-indent: 100%;
+    /*text-indent: 100%;*/
     background: url('../images/arr.png') no-repeat 0px 0px;
     z-index: 999;
 }
@@ -862,7 +875,7 @@ a.more:hover{
         height: 72px;
     }
     .grid-header-contact{
-        padding: 0 0 0 5.1em;
+        /*padding: 0 0 0 5.1em;*/
     }
     .up{
         padding: 5em 0;
