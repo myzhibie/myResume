@@ -17,9 +17,9 @@ angular.module('myproApp')
 //            css(element[0],'opacity',0);
 //            var body=document.getElementsByTagName('body')[0];
             angular.element($window).on('scroll',function(){
-                var sd = document.body.scrollTop;
-                var disY=sd+css(document.body,'height')-50;
-                if(typeof document.body.style.maxHeight==='undefined'){
+                var sd = document.body.scrollTop||document.documentElement.scrollTop;
+                var disY=sd+css(document.documentElement,'height')-50;
+                if(typeof document.documentElement.style.maxHeight==='undefined'){
                     css(element[0],'position','absolute');
                     css(element[0],'top',disY);
                 };
@@ -38,6 +38,7 @@ angular.module('myproApp')
 
             element.on('click',function(event){
                 event.preventDefault();
+
                 redirect(attr.href.slice(1));
             });
         }

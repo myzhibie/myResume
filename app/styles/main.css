@@ -583,6 +583,9 @@ a.more:hover{
     color: #fff;
     font-size: 2em;
 }
+a:focus{
+    outline: none !important;
+}
 .toTop {
     width: 48px;
     height: 48px;

@@ -18,6 +18,9 @@ angular.module('myproApp')
             var obj=document.getElementById(name);
             var body=document.getElementsByTagName('body')[0];
             myAnimate(body,{'scrollTop':obj.offsetTop},1000,Tween.Quad.easeInOut);
+            //for IE
+            myAnimate(document.documentElement,{'scrollTop':obj.offsetTop},1000,Tween.Quad.easeInOut);
+
         }
     }])
     .factory('getAboutMeInfo',['$resource',function($resource){
