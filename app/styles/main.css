@@ -584,6 +584,7 @@ a.more:hover{
     font-size: 2em;
 }
 a:focus{
+    
     outline: none !important;
 }
 .toTop {
