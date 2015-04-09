@@ -8,6 +8,66 @@ html{
     margin:0;
     padding: 0;
 }
+.welcome-outer,.welcome-inner{
+    width: 300px;
+    height: 300px;
+}
+.welcome-outer{
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    left:50%;
+    margin-left: -150px;
+    top:0;
+}
+.welcome-inner{
+    position: absolute;
+    border: 10px solid #fff;
+    border-left-color:#E07514;
+    border-top-color:#E07514;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation:welcomeLogo 2s linear 1s infinite ;
+    -webkit-animation:welcomeLogo 2s linear 1s infinite ;
+    box-sizing: border-box;
+    text-align: center;
+}
+.times{
+    position: absolute;
+    left:50%;
+    margin-left: -150px;
+    font-size: 3em;
+    color: #fff;
+    line-height:300px;
+    width: 100%;
+    animation:welcomeTimes 2s linear 1s infinite ;
+    -webkit-animation:welcomeTimes 2s linear 1s infinite ;
+}
+@-webkit-keyframes welcomeTimes
+{
+    from{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+    to{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+}
+@-webkit-keyframes welcomeLogo
+{
+    from{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
 body{
     background: #ffffff;
     font-family: 'open sans',sans-serif;
@@ -18,15 +78,6 @@ body{
     height: 100%;
 }
 a{cursor:pointer;}
-.welcome{
-    font-size: 3em;
-    font-weight: bold;
-    color: #fff;
-    opacity: 0;
-    position: absolute;
-    left:0;
-    top:0.5em;
-}
 .header{
     background: url(../images/banner.jpg) 0 0;
     /*宽度固定*/
@@ -37,13 +88,35 @@ a{cursor:pointer;}
     padding: 10em 0;
     /*背景图像的尺寸，可用像素也可用cover，contain等*/
     background-size: cover;
+
 }
 
 .logo4header{
     float: left;
     width: 50%;
 }
+.screen{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgb(027,188,155);
+    opacity: 1;
+    z-index:999;
+    -webkit-transition: all linear 1s  .5s;
+    transition: all linear 1s .5s;
 
+}
+/*.screen.ng-hide-add.ng-hide-add-active,*/
+/*.screen.ng-hide-remove.ng-hide-remove-active {*/
+
+
+/*}*/
+.screen.ng-hide {
+    transform:scale(0) rotate(360deg) skew(90deg);
+    -webkit-trnsform:scale(0) rotate(360deg) skew(90deg);
+}
 .logo4header p{
     padding: 0.5em 0;
     margin: 0;
@@ -54,7 +127,7 @@ a{cursor:pointer;}
 .head-grid{
     float:left;
     width:34.9% ;
-    padding: 0 3px;
+    padding: 0;
 }
 
 .grid-ex,.me{
@@ -183,17 +256,14 @@ img.clock,img.clock-item{
 .img-customeheight{
     height: 100%;
 }
-.wrap{
-    opacity: 0;
-    /*padding: 10px 10px;*/
-    /*border-radius: 20px;*/
-    position: relative;
-    /*box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
-    /*-webkit-box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
-    /*-moz-box-shadow: 0px 3px 10px rgba(0,0,0,0.5);*/
-    /*-o-box-shadow:0px 3px 10px rgba(0,0,0,0.5);*/
-}
-
+/*.wrap{*/
+    /*opacity: 0;*/
+    /*-webkit-transition:all 2s linear 6s ;*/
+    /*transition:all 2s linear 6s;*/
+/*}*/
+/*.wrap.show-home{*/
+    /*opacity: 1;*/
+/*}*/
 
 a.more{
     color: #1BBC9B;

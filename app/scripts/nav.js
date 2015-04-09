@@ -36,6 +36,7 @@ angular.module('myproApp')
             }
             //$window是angular对window对象的一个别称，是原生的
             //window对象
+
             var top=css(element[0],'top');
             angular.element($window).on('scroll',function(event){
                 //event.preventDefault();

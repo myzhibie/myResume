@@ -26,9 +26,13 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<!--homepage start-->
-<div class="header" id="home" ng-controller="homeCtrl">
+<!--screen start-->
+<div class="screen" ng-controller="screenCtrl" ng-init="screenShow=true;showTimer=true; times=0;" ng-show="screenShow">
     <my-welcome></my-welcome>
+</div>
+<!--screen end-->
+<!--homepage start-->
+<div class="header" id="home" ng-controller="homeCtrl" >
     <my-home></my-home>
 </div>
 <!--homepage end-->
@@ -153,6 +157,7 @@
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
+<script src="scripts/screen.js"></script>
 <script src="scripts/animate.js"></script>
 <script src="scripts/GetLunarDay.js"></script>
 <script src="scripts/main.js"></script>
